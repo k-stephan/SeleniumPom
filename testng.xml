@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MARS V10 Login Test">
+
+<listeners>
+		<listener class-name="ExtentReportertestNG.TestListener" />
+</listeners>
+	
+
+	  <test name="Login Test Case">
+	  
+	  		<classes>
+				<class name="MarsV10POM.V10POM.LoginPagesTest"></class>
+				<class name="MarsV10POM.V10POM.RepLookUpTest"></class>
+			</classes>
+	  		
+	  </test> 
+  
+</suite> 

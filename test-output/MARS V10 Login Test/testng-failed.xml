@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MARS V10 Login Test]">
+  <listeners>
+    <listener class-name="ExtentReportertestNG.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Login Test Case(failed)">
+    <classes>
+      <class name="MarsV10POM.V10POM.RepLookUpTest">
+        <methods>
+          <include name="RepSourceID"/>
+          <include name="setUp"/>
+          <include name="repmaintab"/>
+          <include name="RepComments"/>
+        </methods>
+      </class> <!-- MarsV10POM.V10POM.RepLookUpTest -->
+      <class name="MarsV10POM.V10POM.LoginPagesTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="loginHomePageTitleTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="MarsLogoImageTest"/>
+        </methods>
+      </class> <!-- MarsV10POM.V10POM.LoginPagesTest -->
+    </classes>
+  </test> <!-- Login Test Case(failed) -->
+</suite> <!-- Failed suite [MARS V10 Login Test] -->
